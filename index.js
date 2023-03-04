@@ -17,9 +17,9 @@ const path=require("path");
 
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://satishsahu25.github.io/chatty_frontend/')
-  next()
-})
+  res.setHeader('Access-Control-Allow-Origin', 'https://satishsahu25.github.io');
+  next();
+});
 
 app.use(cors());
 app.use(express.json());
