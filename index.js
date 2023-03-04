@@ -15,12 +15,13 @@ const path=require("path");
 //   origin: "https://satishsahu25.github.io",
 // };
 
-const corss={
- "Access-Control-Allow-Origin": "https://satishsahu25.github.io"
 
-}
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://satishsahu25.github.io')
+  next()
+})
 
-app.use(cors(corss));
+app.use(cors());
 app.use(express.json());
 
 
