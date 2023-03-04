@@ -9,9 +9,16 @@ const socket = require("socket.io");
 
 const path=require("path");
 
+const corsOptions = {
+  optionsSuccessStatus: 200, // For legacy browser support
+  credentials: true, // This is important.
+  origin: "https://satishsahu25.github.io",
+};
 
+
+app.use(cors(corsOptions));
 app.use(express.json());
-app.use(cors());
+
 
 //apis
 app.use("/api/auth", userrouter);
