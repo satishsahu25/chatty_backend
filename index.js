@@ -16,7 +16,7 @@ const path=require("path");
 // };
 
 const corss={
-  "Access-Control-Allow-Origin": "https://satishsahu25.github.io/chatty_frontend/#/",
+ "Access-Control-Allow-Origin": "https://satishsahu25.github.io"
 
 }
 
