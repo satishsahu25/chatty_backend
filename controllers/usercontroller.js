@@ -5,7 +5,7 @@ const register = async (req, res, next) => {
   try {
     
     const { username, email, password } = req.body;
-    console.log(req.body);
+    
     const usernamecheck = await User.findOne({ username });
     if (usernamecheck) {
       return res.json({ msg: "Username already exists", status: false });
@@ -29,7 +29,7 @@ const login = async (req, res, next) => {
   try {
     
     const { username, password } = req.body;
-    console.log(req.body);
+
     const usernamecheck = await User.findOne({ username });
     if (!usernamecheck) {
       return res.json({ msg: "Incorrect username or password", status: false });
