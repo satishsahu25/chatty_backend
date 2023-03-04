@@ -17,7 +17,7 @@ const path=require("path");
 
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://satishsahu25.github.io')
+  res.header('Access-Control-Allow-Origin', 'https://satishsahu25.github.io/chatty_frontend/')
   next()
 })
 
