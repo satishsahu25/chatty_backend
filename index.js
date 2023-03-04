@@ -9,8 +9,9 @@ const socket = require("socket.io");
 
 const path=require("path");
 
-app.use(cors());
+
 app.use(express.json());
+app.use(cors());
 
 //apis
 app.use("/api/auth", userrouter);
