@@ -9,14 +9,14 @@ const socket = require("socket.io");
 
 const path=require("path");
 
-const corsOptions = {
-  optionsSuccessStatus: 200, // For legacy browser support
-  credentials: true, // This is important.
-  origin: "https://satishsahu25.github.io",
-};
+// const corsOptions = {
+//   optionsSuccessStatus: 200, // For legacy browser support
+//   credentials: true, // This is important.
+//   origin: "https://satishsahu25.github.io",
+// };
 
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 
